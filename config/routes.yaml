@@ -1,0 +1,68 @@
+##### LOGIN CONTROLLER #####
+login:
+  path: /login
+  controller: App\Controller\LoginController::login
+  methods:
+    - POST
+
+##### MEDICO CONTROLLER #####
+medico:
+  path: /medico/{id}
+  controller: App\Controller\MedicoController::show
+  methods:
+    - GET
+
+medico_all:
+  path: /medico
+  controller: App\Controller\MedicoController::index
+  methods:
+    - GET
+
+medico_create:
+  path: /medico
+  controller: App\Controller\MedicoController::create
+  methods:
+    - POST
+
+medico_update:
+  path: /medico/{id}
+  controller: App\Controller\MedicoController::update
+  methods:
+    - PUT
+
+medico_delete:
+  path: /medico/{id}
+  controller: App\Controller\MedicoController::delete
+  methods:
+    - DELETE
+
+##### ESPECIALIDADE CONTROLLER #####
+especialidade:
+  path: /especialidade/{id}
+  controller: App\Controller\EspecialidadeController::show
+  methods:
+    - GET
+
+especialidade_all:
+  path: /especialidade
+  controller: App\Controller\EspecialidadeController::index
+  methods:
+    - GET
+
+especialidade_create:
+  path: /especialidade
+  controller: App\Controller\EspecialidadeController::create
+  methods:
+    - POST
+
+especialidade_update:
+  path: /especialidade/{id}
+  controller: App\Controller\EspecialidadeController::update
+  methods:
+    - PUT
+
+especialidade_delete:
+  path: /especialidade/{id}
+  controller: App\Controller\EspecialidadeController::delete
+  methods:
+    - DELETE
